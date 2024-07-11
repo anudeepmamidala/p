@@ -1,0 +1,11 @@
+https://github.com/RubixML/CIFAR-10/tree/master/test
+airplane
+automobile
+bird
+cat
+deer
+dog
+frog
+horse
+ship
+truck
