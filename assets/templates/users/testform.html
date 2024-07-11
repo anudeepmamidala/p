@@ -1,0 +1,61 @@
+{%extends 'users/user_base.html'%}
+{%block contents%}
+ <!-- Header -->
+	<header id="head">
+	 <div class="container">
+            <div class="banner-content">
+                <div id="da-slider" class="da-slider">
+                    <div class="da-slide">
+                        <h2>Responsive Website</h2>
+                        <p>Amazing free responsive website for free, use it for your personal or commercial needs</p>
+                        <div class="da-img"></div>
+                    </div>
+                    <div class="da-slide">
+                        <h2>Bootstrap</h2>
+                        <p>Bootstrap, a sleek, intuitive, and powerful mobile first front-end framework.</p>
+                        <div class="da-img"></div>
+                    </div>
+                    <div class="da-slide">
+                        <h2>HTML5/CSS3</h2>
+                        <p>HTML5 is a markup language used for structuring and presenting content for the World Wide Web.</p>
+                        <div class="da-img"></div>
+                    </div>
+                    <div class="da-slide">
+                        <h2>JavaScript/jQuery</h2>
+                        <p>jQuery: The Write Less, Do More, JavaScript Library.</p>
+                        <div class="da-img"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+	</header>
+	<!-- /Header -->
+
+	<!-- Intro -->
+	<div class="container text-center">
+		<br>
+		<h2>Implementation of Grey Scale Normalization in Machine Learning & Artificial Intelligence for Bioinformatics using Convolutional Neural Networks</h2>
+		<p class="text-muted">
+
+             <p><h3 align="center" style="color:orange;font-weight:bold;">Upload an Image to Server....</h3></p>
+      <center>
+           <h2 class="tm-text-title">Test Result <font color="RED">{{result}}</font></h2>
+                                                <form action="{%url 'userTestPrediction'%}" method="post" enctype="multipart/form-data">
+                                                    {%csrf_token%}
+                                                 <div class="form-group">
+                                                        <input type="file" id="contact_subject" name="file" class="form-control" placeholder="Select an Image"  required/>
+                                                 </div>
+                                                  <div class="form-group">
+                                                      <button type="submit" id="contact_subject" name="Submit" class="btn-get-started scrollto" >Submit</button>
+                                                    </div>
+
+
+                                                </form>
+ <img src="{{path}}" width="450" height="380">
+      </center>
+		</p>
+	</div>
+	<!-- /Intro-->
+	</div>
+{%endblock%}
